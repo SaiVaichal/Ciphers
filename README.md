@@ -9,6 +9,8 @@ Fiestel Cipher: a symmetric encryption technique that splits the input into two 
 Next, the user provides a key, which is also converted into an 8-bit binary format. In the first round, the right half is added to the key in binary form, and the result is XORed with the left half to generate a new right half. The left and right halves are then swapped. In the second round, the process repeats: the new right half is added to the key, XORed with the new left half, and swapped again to form the final ciphertext.
 
 If the length of the cipher text is shorter than the original binary string, leading zeroes are added to match the original length. Finally, the binary cipher text is converted back into characters, reconstructing the decrypted text. This implementation follows the core principles of a Feistel cipher, though a full-fledged Feistel network typically involves multiple rounds with different subkeys.
+Output:
+![image](https://github.com/user-attachments/assets/f09e1fb8-ff49-4ca9-aeea-fafda41c9d0c)
 
 
 Hill Cipher: Hill Cipher, a polygraphic substitution cipher that encrypts blocks of letters using matrix multiplication. It requires a square key matrix and processes the plaintext in fixed-size blocks.
@@ -44,3 +46,6 @@ vigenere Cipher: The generate_key function ensures that the encryption key match
 The encrypt_vigenere function encrypts the plaintext by shifting each letter according to the corresponding letter in the key. If a character is uppercase, it remains uppercase; if lowercase, it remains lowercase. Non-alphabetic characters are left unchanged.
 
 The decrypt_vigenere function reverses the process by shifting each letter back based on the key, restoring the original message. It ensures that uppercase and lowercase letters are decrypted correctly while preserving non-alphabetic characters.
+Output:
+![image](https://github.com/user-attachments/assets/5fec9b19-c2c5-44cb-bd47-65a3f9a01b87)
+
