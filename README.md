@@ -49,3 +49,13 @@ The decrypt_vigenere function reverses the process by shifting each letter back 
 Output:
 ![image](https://github.com/user-attachments/assets/5fec9b19-c2c5-44cb-bd47-65a3f9a01b87)
 
+DES:
+A Symmetric-Key Block Cipher
+The Data Encryption Standard (DES) is a symmetric encryption algorithm that processes 64-bit blocks of data using a 56-bit key. It follows a Feistel network structure with 16 rounds of encryption, where each round applies key-based transformations, substitutions (S-boxes), and permutations.  
+
+The encryption begins with an initial permutation (IP), followed by splitting the data into two halves. The right half undergoes expansion, XOR with a round key, substitution, and permutation before being XORed with the left half. The halves swap, and this repeats for 16 rounds. A final permutation (FP) produces the ciphertext.  
+
+Decryption reverses the process using the same key. While DES was once widely used, its short key length makes it vulnerable to attacks, leading to stronger alternatives like 3DES and AES.
+Output:
+![image](https://github.com/user-attachments/assets/bdad0506-3926-4b77-bf55-4d966b1f6523)
+
