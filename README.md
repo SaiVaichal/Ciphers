@@ -1,11 +1,15 @@
 network_security_lab
 Ceaser cipher: This code implements the Caesar Cipher, a basic encryption technique that shifts letters in the alphabet by a fixed number (k). The function ceaserCipher(st, k) encrypts a given text by shifting each letter forward by k positions while keeping uppercase and lowercase letters within their respective ranges. Non-alphabetic characters remain unchanged.
 The function dceaserCipher(st, k) performs decryption by shifting the letters backward by k positions, restoring the original text. The program first takes user input for a plaintext string and a shift value (k). It then encrypts the text using ceaserCipher, decrypts it using dceaserCipher, and finally prints both the encrypted and decrypted text.
+Output:
+![image](https://github.com/user-attachments/assets/d1ff95f6-2729-40c5-a7b4-f41aa24d5c2a)
+
 
 Fiestel Cipher: a symmetric encryption technique that splits the input into two halves and applies transformations using a key. First, the user enters a string, which is converted into an 8-bit binary representation for each character. The resulting binary string is then divided into two equal halves: left and right.
 Next, the user provides a key, which is also converted into an 8-bit binary format. In the first round, the right half is added to the key in binary form, and the result is XORed with the left half to generate a new right half. The left and right halves are then swapped. In the second round, the process repeats: the new right half is added to the key, XORed with the new left half, and swapped again to form the final ciphertext.
 
 If the length of the cipher text is shorter than the original binary string, leading zeroes are added to match the original length. Finally, the binary cipher text is converted back into characters, reconstructing the decrypted text. This implementation follows the core principles of a Feistel cipher, though a full-fledged Feistel network typically involves multiple rounds with different subkeys.
+
 
 Hill Cipher: Hill Cipher, a polygraphic substitution cipher that encrypts blocks of letters using matrix multiplication. It requires a square key matrix and processes the plaintext in fixed-size blocks.
 First, the hill_cipher_encrypt function converts the input text to uppercase and removes spaces. If the text length isn’t a multiple of the key matrix size, it appends 'X' as padding. The text is then converted into numerical form (A=0, B=1, etc.), split into blocks, and multiplied by the key matrix. The resulting numbers are converted back to letters to form the ciphertext.
