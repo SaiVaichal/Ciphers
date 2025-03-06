@@ -28,11 +28,17 @@ The genrate_key function generates a random key by shuffling the English alphabe
 The encry function encrypts the plaintext by replacing each letter with its corresponding value from the generated key. It preserves non-alphabetic characters by leaving them unchanged. Similarly, the dencry function decrypts the ciphertext using the inverse key, mapping each encrypted letter back to its original form.
 
 Finally, the program generates a random key, takes user input for plaintext, encrypts it, displays the ciphertext, and then decrypts it back to verify correctness.
+Output:
+![image](https://github.com/user-attachments/assets/a8c743d9-5062-471d-967b-2587c3543012)
+
 
 Playfair Cipher: The playfair_mat function generates the Playfair matrix by removing duplicate letters from the key and filling the remaining slots with the rest of the alphabet. This matrix is used for encryption and decryption. The find_position function locates the row and column of a given letter within this matrix.
 The playfair_encrypt function processes the plaintext by replacing "J" with "I" and ensuring an even length by appending "X" if needed. It encrypts two letters at a time based on Playfair Cipher rules:
 
 If both letters are in the same row, they are replaced with the next letter in the row. If both letters are in the same column, they are replaced with the next letter in the column. Otherwise, they are replaced with letters in the opposite corners of the rectangle they form in the matrix. The playfair_decrypt function reverses this process to retrieve the original message, shifting letters backward instead of forward.
+Output:
+![image](https://github.com/user-attachments/assets/ef988f8b-4254-4990-8f75-fd7a0be02366)
+
 
 vigenere Cipher: The generate_key function ensures that the encryption key matches the length of the plaintext by repeating its characters as needed. This extended key is then used for both encryption and decryption.
 The encrypt_vigenere function encrypts the plaintext by shifting each letter according to the corresponding letter in the key. If a character is uppercase, it remains uppercase; if lowercase, it remains lowercase. Non-alphabetic characters are left unchanged.
