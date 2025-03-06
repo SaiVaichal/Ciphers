@@ -15,6 +15,8 @@ The hill_cipher_decrypt function reverses the encryption by computing the modula
 The mod_inverse_matrix function calculates the modular inverse of the key matrix by finding its determinant, computing its adjugate, and applying modular arithmetic. This inverse matrix is crucial for decryption.
 
 Finally, the program takes user input, encrypts the text using a predefined 3×3 key matrix, displays the ciphertext, then decrypts it to retrieve the original message.
+![image](https://github.com/user-attachments/assets/42ab7bb1-f1fc-451f-b752-b10838a6090a)
+
 
 MonoAlphabetic Cipher: This code implements a Monoalphabetic Cipher, a substitution cipher where each letter in the plaintext is replaced with a corresponding letter from a randomly shuffled alphabet.
 The genrate_key function generates a random key by shuffling the English alphabet and mapping each letter to a new unique letter. This key is stored as a dictionary. The inv function creates an inverse mapping of this key, which is used for decryption.
