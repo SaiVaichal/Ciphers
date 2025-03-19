@@ -75,4 +75,36 @@ Used in TLS, VPNs, and secure messaging.
 Output:
 ![image](https://github.com/user-attachments/assets/27ecd57c-7281-4e8f-87f3-ecc78177974a)
 
+RSA :
+
+This is a Python implementation of the RSA encryption algorithm, a widely used public-key cryptosystem. The program allows users to:
+-Generate public and private keys
+-Encrypt a plaintext message using the public key
+-Decrypt the encrypted message using the private key
+-How RSA Works
+
+Key Generation:
+-Choose two large prime numbers, p and q.
+-Compute n = p * q, which forms part of the public and private keys.
+-Compute Euler's totient function, φ(n) = (p-1) * (q-1).
+-Select an integer e such that 1 < e < φ(n), and gcd(e, φ(n)) = 1 (public exponent).
+-Compute the modular inverse d, which satisfies d * e ≡ 1 (mod φ(n)) (private exponent).
+
+Encryption:
+Convert each character of the plaintext message to its ASCII value.
+Encrypt using the formula:
+
+C = (M^e) mod n
+
+C is the encrypted character, M is the original character.
+Decryption:
+
+Decrypt using the formula:
+
+M = (C^d) mod n
+Convert the ASCII values back to characters.
+
+![image](https://github.com/user-attachments/assets/c98f729f-f3d2-4bd5-b943-4f66395d1217)
+
+
 
