@@ -59,3 +59,20 @@ Decryption reverses the process using the same key. While DES was once widely us
 Output:
 ![image](https://github.com/user-attachments/assets/bdad0506-3926-4b77-bf55-4d966b1f6523)
 
+Diffie-Hellman :
+
+The Diffie-Hellman Key Exchange (DHKE) allows two parties to securely establish a shared secret over an insecure channel. It relies on modular exponentiation and the difficulty of the discrete logarithm problem.
+
+How It Works-
+Public Parameters: A prime number p and a primitive root g are shared.
+Key Exchange:
+-Party A picks a private key a, computes A = g^a mod p, and shares A.
+-Party B picks b, computes B = g^b mod p, and shares B.
+Shared Secret: Both compute S = (other's value)^own key mod p, obtaining the same secret.
+Security & Uses
+Secure unless intercepted (vulnerable to MITM without authentication).
+Used in TLS, VPNs, and secure messaging.
+Output:
+![image](https://github.com/user-attachments/assets/27ecd57c-7281-4e8f-87f3-ecc78177974a)
+
+
